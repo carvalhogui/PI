@@ -1,0 +1,78 @@
+{% extends "bairros/base.html" %}
+
+{% block content %}
+<h3>Visualização das estatísticas por bairro</h3>
+<p>Aqui estão listados os bairros da região do Capão Redondo onde foram registrados Boletins de Ocorrência.</p>
+<p>Após selecionar o bairro, clique no botão "Visualizar informações" abaixo. </p>
+<p>Caso o bairro do seu interesse não esteja listado, isso pode ser decorrente dos seguintes erros:</p>
+<ul class="list-group list-group-flush">
+	<li class="list-group-item">Digitação incorreta do nome do bairro durante o  preenchimento do boletim de ocorrência</li>
+	<li class="list-group-item">A ocorrência de fato ocorreu na região do Capão Redondo, porém o boletim de ocorrência foi registrado na delegacia de outra região</li>
+	<li class="list-group-item">Erro no processamento dos dados</li>
+
+<p></p>
+<select>
+	<option disabled="True selected">-- Escolha o bairro --</option>
+	<option>CAMPO LIMPO</option>
+<option>CAPAO REDONDO</option>
+<option>CHACARA SANTA MARIA</option>
+<option>CIDADE AUXILIADORA</option>
+<option>CONJUNTO HABITACIONAL INSTITUTO ADVENTISTA</option>
+<option>CONJUNTO HABITACIONAL JARDIM SAO BENTO</option>
+<option>CONJUNTO HABITACIONAL PARQUE VALO VELHO</option>
+<option>JARDIM AMALIA</option>
+<option>JARDIM ANGELA</option>
+<option>JARDIM AURELIO</option>
+<option>JARDIM CAPAO REDONDO</option>
+<option>JARDIM CLARICE</option>
+<option>JARDIM COMERCIAL</option>
+<option>JARDIM DAS PALMEIRAS</option>
+<option>JARDIM DAS ROSAS</option>
+<option>JARDIM DO COLEGIO</option>
+<option>JARDIM DOM JOSE</option>
+<option>JARDIM ELEDY</option>
+<option>JARDIM FRATERNIDADE</option>
+<option>JARDIM GUARUJA</option>
+<option>JARDIM IAE</option>
+<option>JARDIM IMBE</option>
+<option>JARDIM IRACEMA</option>
+<option>JARDIM IRAPIRANGA</option>
+<option>JARDIM IRENE</option>
+<option>JARDIM ITAOCA</option>
+<option>JARDIM LEME</option>
+<option>JARDIM LILAH</option>
+<option>JARDIM MACEDONIA</option>
+<option>JARDIM MARACA</option>
+<option>JARDIM MARIA SAMPAIO</option>
+<option>JARDIM MARIANE</option>
+<option>JARDIM MITSUTANI</option>
+<option>JARDIM MODELO</option>
+<option>JARDIM PERI</option>
+<option>JARDIM RANIELE</option>
+<option>JARDIM REGINA</option>
+<option>JARDIM ROSANA</option>
+<option>JARDIM SAO BENTO</option>
+<option>JARDIM SAO BENTO NOVO</option>
+<option>JARDIM SAO JOSE</option>
+<option>JARDIM SAO MANOEL</option>
+<option>JARDIM SONIA INGA</option>
+<option>JARDIM SORAIA</option>
+<option>JARDIM VISTA LINDA</option>
+<option>MORRO DO INDIO</option>
+<option>PARQUE DO LAGO</option>
+<option>PARQUE FERNANDA</option>
+<option>PARQUE INDEPENDENCIA</option>
+<option>PARQUE LIGIA</option>
+<option>PARQUE NOVO SANTO AMARO</option>
+<option>PARQUE SONIA</option>
+<option>PIRAJUSSARA</option>
+<option>VALO VELHO</option>
+<option>VILA ANDRADE</option>
+<option>VILA DAS BELEZAS</option>
+<option>VILA FAZZEONI</option>
+<option>VILA NARCISO</option>
+<option>VILA REMO</option>
+</select>
+<p></p>
+<button type="button">Visualizar informações</button> 
+{% endblock %}
