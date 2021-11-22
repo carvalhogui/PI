@@ -11,7 +11,12 @@
 	<li class="list-group-item">Erro no processamento dos dados</li>
 
 <p></p>
-<select>
+	<form action="/pagina_inicial/pesquisar_por_bairro" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Buscar">
+	</form>
+<!--<select>
 	<option disabled="True selected">-- Escolha o bairro --</option>
 	<option>CAMPO LIMPO</option>
 <option>CAPAO REDONDO</option>
@@ -72,7 +77,9 @@
 <option>VILA FAZZEONI</option>
 <option>VILA NARCISO</option>
 <option>VILA REMO</option>
-</select>
+</select>-->
 <p></p>
 <button type="button">Visualizar informações</button> 
+{{ graph1|safe }}
+{{ graph2|safe}}
 {% endblock %}

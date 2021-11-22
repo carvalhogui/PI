@@ -9,7 +9,7 @@
 	<li class="list-group-item">Digitação incorreta do nome do logradouro durante o  preenchimento do boletim de ocorrência</li>
 	<li class="list-group-item">A ocorrência de fato ocorreu na região do Capão Redondo, porém o boletim de ocorrência foi registrado na delegacia de outra região</li>
 	<li class="list-group-item">Erro no processamento dos dados</li>
-<!--{{ graph|safe }}-->
+
 <p></p>
 <select>
 	<option disabled="True selected">-- Escolha o logradouro --</option>
@@ -768,9 +768,11 @@
 <option>VIELA PAULO MONTEIRO DUARTE</option>
 <option>VIELA UM</option>
 <option>VILA PAULO MONTEIRO DUARTE</option>
-
-
 </select>
+
+
 <p></p>
-<button type="button">Visualizar informações</button> 
+<button type="button">Visualizar informações</button>
+{{ grafRFlog|safe }}
+{{ logHorario|safe}}
 {% endblock %}
