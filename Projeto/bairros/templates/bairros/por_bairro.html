@@ -11,11 +11,11 @@
 	<li class="list-group-item">Erro no processamento dos dados</li>
 
 <p></p>
-	<form action="/pagina_inicial/pesquisar_por_bairro" method="post">
+<form action="/pagina_inicial/pesquisar_por_bairro" method="post">
     {% csrf_token %}
     {{ form }}
-    <input type="submit" value="Buscar">
-	</form>
+<input type="submit" value="Visualizar informações">
+</form>
 <!--<select>
 	<option disabled="True selected">-- Escolha o bairro --</option>
 	<option>CAMPO LIMPO</option>
@@ -79,7 +79,6 @@
 <option>VILA REMO</option>
 </select>-->
 <p></p>
-<button type="button">Visualizar informações</button> 
 {{ graph1|safe }}
 {{ graph2|safe}}
 {% endblock %}

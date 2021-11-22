@@ -5,7 +5,7 @@ from io import StringIO
 
 
 conn = sqlite3.connect('db.sqlite3', check_same_thread=False)
-df=pd.read_sql_query("SELECT * FROM dadosOKatual",conn)
+df=pd.read_sql_query("SELECT * FROM dados",conn)
 
 
 # PARA OS BAIRROS

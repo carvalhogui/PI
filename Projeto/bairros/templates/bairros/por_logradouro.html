@@ -11,13 +11,17 @@
 	<li class="list-group-item">Erro no processamento dos dados</li>
 
 <p></p>
-<select>
+<form action="/pagina_inicial/pesquisar_por_logradouro" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Visualizar informações">
+</form>
+
+<!--<select>
 	<option disabled="True selected">-- Escolha o logradouro --</option>
 <option>AVENIDA ALTO DE VILA PIRAJUSSARA</option>
 <option>AVENIDA ANDORINHA DOS BEIRAIS</option>
-<option>AVENIDA ANDORINHA-DOS-BEIRAIS</option>
 <option>AVENIDA APOLOGOS ORIENTAIS</option>
-<option>AVENIDA ATOS TOMAS FERRACCIU</option>
 <option>AVENIDA ATOS TOMAS FERRACIU</option>
 <option>AVENIDA AUGUSTO BARBOSA TAVARES</option>
 <option>AVENIDA AUGUSTO CARDOSO</option>
@@ -38,16 +42,13 @@
 <option>AVENIDA VISCONDE DO RIO GRANDE</option>
 <option>AVENIDA WILHELM FRIEDRICH LADWIG</option>
 <option>ESTRADA DE ITAPECERICA</option>
-<option>ESTRADA DO M'BOI MIRIM",<option>ESTRADA DO MBOI MIRIM</option>
-<option>ESTRADA ITAPECERICA</option>
+<option>ESTRADA DO M'BOI MIRIM"<option>
 <option>ESTRADA PIRAJUSSARA VALO VELHO</option>
-<option>ESTRADA PIRAJUSSARA-VALO VELHO</option>
 <option>PASSARELA TONINHO GUERREIRO</option>
 <option>PRACA AXE</option>
 <option>PRACA DOUTOR RAUL BORGES DA ROCHA</option>
 <option>PRACA MANOEL LOPES</option>
 <option>PRACA PROFESSOR MARIO DOS SANTOS</option>
-<option>R. ENG. JOSE MARIA DA SILVA VELHO</option>
 <option>RODOVIA ARMANDO SALLES / SP 228</option>
 <option>RUA ABIETACEAS</option>
 <option>RUA ABIGAIL MAIA</option>
@@ -94,7 +95,6 @@
 <option>RUA ANA ASLAN</option>
 <option>RUA ANDORINHA</option>
 <option>RUA ANDORINHA COLEIRA</option>
-<option>RUA ANDORINHA DOS BEIRAIS</option>
 <option>RUA ANDORINHA PEQUENA</option>
 <option>RUA ANDRE SOARES</option>
 <option>RUA ANDREA BRIOSCO</option>
@@ -768,11 +768,10 @@
 <option>VIELA PAULO MONTEIRO DUARTE</option>
 <option>VIELA UM</option>
 <option>VILA PAULO MONTEIRO DUARTE</option>
-</select>
+</select>-->
 
 
 <p></p>
-<button type="button">Visualizar informações</button>
 {{ grafRFlog|safe }}
 {{ logHorario|safe}}
 {% endblock %}
