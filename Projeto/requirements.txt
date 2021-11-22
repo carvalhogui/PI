@@ -2,6 +2,7 @@ asgiref==3.4.1
 cycler==0.11.0
 Django==3.2.9
 django-environ==0.8.1
+django-heroku=7.59.1
 fonttools==4.28.1
 greenlet==1.1.2
 gunicorn==20.1.0
