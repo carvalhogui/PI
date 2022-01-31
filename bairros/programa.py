@@ -90,27 +90,3 @@ def log_horario(logradouro_selecionado):
     data2 = imgdata2.getvalue()
     return data2
 
-
-'''def return_graph():
-
-    plt.xlabel("Ano")
-    plt.ylabel("Quantidade de ocorrências")
-    plt.title('PARQUE FERNANDA - Roubo e Furto de celulares')
-    teste=plt.plot(ano,lista)
-    return teste
-
-
-
-
-
-    fig = plt.figure()
-    
-    plt.plot(x,y)
-
-    imgdata = StringIO()
-    fig.savefig(imgdata, format='svg')
-    imgdata.seek(0)
-
-    data = imgdata.getvalue()
-    return data
-'''
