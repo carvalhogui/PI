@@ -10,17 +10,18 @@ def index(request):
 	context={}
 	return HttpResponse(template.render(context,request))
 
+# Para a página sobre_nós
 def sobre_nos(request):
 	template=loader.get_template('bairros/sobre_nos.html')
 	context={}
 	return HttpResponse(template.render(context,request))
 
 
-
+# Utilizando o request método POST, para receber informações solicitadas pelo usuário
 def pesquisar_por_bairro(request):
 	# se for um POST, é pq a pessoa submeteu o formulário
 	if request.method == 'POST':
-		# Cria o formulário a partir do que você recebeu
+		# Cria o formulário a partir do que é recebido
 		form = BairroForm(request.POST)
 		# Verifica se é valido
 		if form.is_valid():
