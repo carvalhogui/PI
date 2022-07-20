@@ -8,7 +8,7 @@ conn = sqlite3.connect('db.sqlite3', check_same_thread=False)
 df=pd.read_sql_query("SELECT * FROM dados",conn)
 
 
-# PARA OS BAIRROS
+# Gera os gráficos para o bairro selecionado
 def return_graph(bairro_selecionado):
     ano=[2015,2016,2017,2018,2019,2020,2021]
     lista=[]
@@ -49,7 +49,7 @@ def graph_horario(bairro_selecionado):
     data2 = imgdata2.getvalue()
     return data2
 
-# PARA LOGRADOURO
+# Gera os graficos para o logradouro selecionado
 def grafico_log(logradouro_selecionado):
     ano=[2015,2016,2017,2018,2019,2020,2021]
     lista=[]
